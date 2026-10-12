@@ -1,0 +1,1416 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Visly: desarrollo de software y soluciones tecnológicas para organizaciones de diversos sectores. Sistemas de gestión, aplicaciones web y herramientas digitales desde Lerma, Estado de México."
+    />
+    <meta name="theme-color" content="#252d43" />
+    <meta
+      property="og:title"
+      content="VISLY · Desarrollo digital con intención"
+    />
+    <meta
+      property="og:description"
+      content="Convertimos ideas y procesos en páginas web, sistemas y aplicaciones pensadas para tu empresa."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <title>VISLY · Páginas web, sistemas y aplicaciones</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="assets/vendor/bootstrap/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="assets/js/main.js" defer></script>
+    <noscript
+      ><style>
+        .navbar-collapse.collapse:not(.show) {
+          display: block;
+        }
+        .navbar-toggler {
+          display: none;
+        }
+        .solution-tabs {
+          display: none;
+        }
+        .solution-panel[hidden] {
+          display: grid !important;
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <!-- Iconos vectoriales propios. Se incluyen dentro del HTML para funcionar sin conexión. -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon-definitions"
+      aria-hidden="true"
+    >
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14m-6-6 6 6-6 6" />
+      </symbol>
+      <symbol id="i-up-right" viewBox="0 0 24 24">
+        <path d="M6 18 18 6M6 6h12v12" />
+      </symbol>
+      <symbol id="i-down" viewBox="0 0 24 24">
+        <path d="M12 5v14m-6-6 6 6 6-6" />
+      </symbol>
+      <symbol id="i-code" viewBox="0 0 24 24">
+        <path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 16" />
+      </symbol>
+      <symbol id="i-window" viewBox="0 0 24 24">
+        <rect x="3" y="4" width="18" height="16" rx="2" />
+        <path d="M3 9h18M7 6.5h.01m3 0h.01" />
+      </symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="7" height="7" rx="1" />
+        <rect x="14" y="3" width="7" height="7" rx="1" />
+        <rect x="3" y="14" width="7" height="7" rx="1" />
+        <rect x="14" y="14" width="7" height="7" rx="1" />
+      </symbol>
+      <symbol id="i-mobile" viewBox="0 0 24 24">
+        <rect x="6" y="2" width="12" height="20" rx="3" />
+        <path d="M10 5h4m-3 14h2" />
+      </symbol>
+      <symbol id="i-care" viewBox="0 0 24 24">
+        <path d="M5 16v-4a7 7 0 0 1 14 0v4m0 0v3a2 2 0 0 1-2 2h-4" />
+        <rect x="3" y="11" width="4" height="7" rx="2" />
+        <rect x="17" y="11" width="4" height="7" rx="2" />
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6" />
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24">
+        <path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z" />
+        <circle cx="12" cy="10" r="2.5" />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="m3 6 9 7 9-7" />
+      </symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24">
+        <rect x="8" y="8" width="12" height="12" rx="2" />
+        <path d="M16 8V4H4v12h4" />
+      </symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 7v5l3 2" />
+      </symbol>
+      <symbol id="i-star" viewBox="0 0 24 24">
+        <path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5" />
+      </symbol>
+    </svg>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header" id="inicio">
+      <nav class="navbar navbar-expand-lg" aria-label="Navegación principal">
+        <div class="container site-container">
+          <a class="navbar-brand" href="index.html" aria-label="VISLY, inicio"
+            ><img
+              src="assets/img/logo-visly.svg"
+              alt="VISLY"
+              width="130"
+              height="36"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Abrir menú"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#soluciones">Soluciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="filosofia.html">Misión y valores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proceso">Cómo trabajamos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="terminos.html">Términos</a>
+              </li>
+              <li class="nav-item ms-lg-4">
+                <a class="button button-small button-dark" href="#contacto"
+                  >Hablemos
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-up-right" /></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero section-space" aria-labelledby="hero-title">
+        <div class="container site-container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7 hero-copy">
+              <p class="eyebrow entrance">
+                <span class="status-dot"></span> Desarrollo de software · Lerma,
+                México
+              </p>
+              <h1 id="hero-title" class="entrance delay-1">
+                Hacemos digital<br />lo que
+                <span class="accent-word">imaginas.</span>
+              </h1>
+              <p class="hero-description entrance delay-2">
+                Páginas web, sistemas a medida y aplicaciones que conectan tu
+                negocio con su siguiente etapa.
+              </p>
+              <div class="hero-actions entrance delay-3">
+                <a class="button button-dark" href="#contacto"
+                  >Cuéntanos tu idea
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-up-right" /></svg
+                ></a>
+                <a class="text-link" href="#servicios"
+                  >Explorar servicios
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-down" /></svg
+                ></a>
+              </div>
+              <p class="hero-note entrance delay-3">
+                Diseño con intención. Código a tu medida.
+              </p>
+            </div>
+            <div class="col-lg-5">
+              <div
+                class="hero-art entrance delay-2"
+                role="img"
+                aria-label="Concepto visual de un sistema de gestión diseñado por VISLY"
+              >
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="art-caption">
+                  <span class="little-cross">+</span> De una idea a una
+                  experiencia.
+                </div>
+                <div class="preview-window hero-window">
+                  <div class="window-bar">
+                    <span class="window-dots"><i></i><i></i><i></i></span
+                    ><span>tu próxima solución</span
+                    ><svg class="icon" aria-hidden="true">
+                      <use href="#i-up-right" />
+                    </svg>
+                  </div>
+                  <div class="hero-dashboard">
+                    <div class="dashboard-rail">
+                      <span class="mini-v">v</span
+                      ><span class="rail-square selected"></span
+                      ><span class="rail-square"></span
+                      ><span class="rail-square"></span
+                      ><span class="rail-square"></span>
+                    </div>
+                    <div class="dashboard-content">
+                      <div class="mock-top">
+                        <span>Vista general</span
+                        ><span class="mock-avatar">V</span>
+                      </div>
+                      <p class="mock-greeting">Todo en su lugar.</p>
+                      <p class="mock-caption">
+                        Más claridad para tu día a día.
+                      </p>
+                      <div class="mock-stats">
+                        <div>
+                          <span>Proyectos</span><strong>12</strong
+                          ><i class="mock-pill">En seguimiento</i>
+                        </div>
+                        <div>
+                          <span>Tareas listas</span><strong>28</strong
+                          ><i class="mock-pill pale">Esta semana</i>
+                        </div>
+                      </div>
+                      <div class="mock-chart">
+                        <div class="chart-heading">
+                          <span>Actividad del equipo</span><small>Semana</small>
+                        </div>
+                        <div class="bars">
+                          <i style="--bar: 35%"></i><i style="--bar: 58%"></i
+                          ><i style="--bar: 44%"></i><i style="--bar: 78%"></i
+                          ><i style="--bar: 65%"></i><i style="--bar: 91%"></i
+                          ><i style="--bar: 74%"></i>
+                        </div>
+                        <div class="chart-days">
+                          <span>L</span><span>M</span><span>M</span
+                          ><span>J</span><span>V</span><span>S</span
+                          ><span>D</span>
+                        </div>
+                      </div>
+                      <div class="mock-task">
+                        <span class="task-check">✓</span
+                        ><span>Una mejor forma de trabajar</span
+                        ><span class="task-dot"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="floating-label">
+                  <span class="label-icon"
+                    ><svg class="icon" aria-hidden="true">
+                      <use href="#i-code" /></svg
+                  ></span>
+                  <div>
+                    <strong>Hecho para tu negocio</strong
+                    ><span>Claro. Útil. A tu medida.</span>
+                  </div>
+                </div>
+                <p class="concept-note">
+                  Visualización conceptual · Datos ilustrativos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-bottom">
+            <span>Un buen proyecto empieza por entenderte.</span>
+            <div>
+              <span>Web</span><span class="separator">/</span
+              ><span>Software</span><span class="separator">/</span
+              ><span>Apps</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="servicios"
+        class="section-space"
+        aria-labelledby="services-title"
+      >
+        <div class="container site-container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">
+                <span class="section-number">01 /</span> Lo que hacemos
+              </p>
+              <h2 id="services-title">
+                La solución correcta.<br />Para tu forma de trabajar.
+              </h2>
+            </div>
+            <p>
+              Empresa dedicada al desarrollo de software y soluciones
+              tecnológicas. Ofrece sistemas de gestión, aplicaciones web y
+              herramientas digitales orientadas a diferentes sectores, con
+              capacidad de adaptarse a las necesidades de cada cliente, sin
+              limitar su alcance a un único mercado.
+            </p>
+          </div>
+          <div class="services-grid">
+            <article class="service-item reveal">
+              <div class="service-top">
+                <svg class="service-icon icon" aria-hidden="true">
+                  <use href="#i-window" /></svg
+                ><span>01</span>
+              </div>
+              <h3>Páginas web</h3>
+              <p>
+                Tu empresa merece una presencia que inspire confianza. Diseñamos
+                sitios claros, adaptables y enfocados en presentar lo que haces
+                y facilitar el contacto.
+              </p>
+              <ul class="service-tags" aria-label="Tipos de páginas">
+                <li>Sitios corporativos</li>
+                <li>Landing pages</li>
+                <li>Catálogos</li>
+              </ul>
+              <a class="text-link" href="#contacto" data-service="Página web"
+                >Quiero mi página
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-arrow" /></svg
+              ></a>
+            </article>
+            <article class="service-item reveal">
+              <div class="service-top">
+                <svg class="service-icon icon" aria-hidden="true">
+                  <use href="#i-grid" /></svg
+                ><span>02</span>
+              </div>
+              <h3>Sistemas a medida</h3>
+              <p>
+                Transformamos procesos manuales en herramientas ordenadas.
+                Gestión de clientes, inventarios, citas o reportes, con
+                funciones que responden a tu operación.
+              </p>
+              <ul class="service-tags" aria-label="Funciones de sistemas">
+                <li>Paneles de gestión</li>
+                <li>Automatización</li>
+                <li>Reportes</li>
+              </ul>
+              <a
+                class="text-link"
+                href="#contacto"
+                data-service="Sistema a medida"
+                >Mejorar mis procesos
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-arrow" /></svg
+              ></a>
+            </article>
+            <article class="service-item reveal">
+              <div class="service-top">
+                <svg class="service-icon icon" aria-hidden="true">
+                  <use href="#i-mobile" /></svg
+                ><span>03</span>
+              </div>
+              <h3>Aplicaciones</h3>
+              <p>
+                Acerca tus servicios a clientes y equipos. Desarrollamos
+                experiencias móviles y aplicaciones web con navegación sencilla
+                e integración con tus sistemas.
+              </p>
+              <ul class="service-tags" aria-label="Tipos de aplicaciones">
+                <li>Apps móviles</li>
+                <li>Aplicaciones web</li>
+                <li>Integración de APIs</li>
+              </ul>
+              <a class="text-link" href="#contacto" data-service="Aplicación"
+                >Dar forma a mi app
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-arrow" /></svg
+              ></a>
+            </article>
+            <article class="service-item reveal">
+              <div class="service-top">
+                <svg class="service-icon icon" aria-hidden="true">
+                  <use href="#i-care" /></svg
+                ><span>04</span>
+              </div>
+              <h3>Mejora y acompañamiento</h3>
+              <p>
+                Tu proyecto sigue evolucionando. Podemos ayudarte a actualizar
+                funciones, corregir incidencias y planear mejoras para que tu
+                solución continúe siendo útil.
+              </p>
+              <ul class="service-tags" aria-label="Tipos de acompañamiento">
+                <li>Mantenimiento</li>
+                <li>Optimización</li>
+                <li>Nuevas funciones</li>
+              </ul>
+              <a
+                class="text-link"
+                href="#contacto"
+                data-service="Mejora o mantenimiento"
+                >Evolucionar mi proyecto
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-arrow" /></svg
+              ></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="soluciones"
+        class="section-space solutions-section"
+        aria-labelledby="solutions-title"
+      >
+        <div class="container site-container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">
+                <span class="section-number">02 /</span> Ideas que toman forma
+              </p>
+              <h2 id="solutions-title">
+                ¿Cómo podría verse<br />tu próximo proyecto?
+              </h2>
+            </div>
+            <p>
+              Explora tres conceptos de diseño. Cada uno parte de una necesidad
+              distinta; el tuyo se construye alrededor de la tuya.
+            </p>
+          </div>
+          <div
+            class="solution-tabs reveal"
+            role="tablist"
+            aria-label="Explorar ejemplos de soluciones"
+          >
+            <button
+              class="solution-tab active"
+              id="tab-web"
+              role="tab"
+              aria-controls="panel-web"
+              aria-selected="true"
+              tabindex="0"
+            >
+              Página web
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-window" />
+              </svg>
+            </button>
+            <button
+              class="solution-tab"
+              id="tab-system"
+              role="tab"
+              aria-controls="panel-system"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Sistema empresarial
+              <svg class="icon" aria-hidden="true"><use href="#i-grid" /></svg>
+            </button>
+            <button
+              class="solution-tab"
+              id="tab-app"
+              role="tab"
+              aria-controls="panel-app"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Aplicación
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-mobile" />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="solution-panel reveal"
+            id="panel-web"
+            role="tabpanel"
+            aria-labelledby="tab-web"
+            tabindex="0"
+          >
+            <div
+              class="solution-preview web-example"
+              role="img"
+              aria-label="Concepto de sitio corporativo para un estudio de arquitectura ficticio llamado Forma"
+            >
+              <div class="example-browser">
+                <span class="window-dots"><i></i><i></i><i></i></span
+                ><span>Concepto · Sitio corporativo</span>
+              </div>
+              <div class="architecture-preview">
+                <div class="arch-nav">
+                  <strong>forma<span>®</span></strong
+                  ><span
+                    >Espacios &nbsp;&nbsp; Estudio &nbsp;&nbsp; Contacto</span
+                  >
+                </div>
+                <div class="arch-layout">
+                  <div>
+                    <span class="arch-label">ARQUITECTURA CON SENTIDO</span>
+                    <h4>Espacios para<br />vivir mejor.</h4>
+                    <p>Diseño que acompaña tu forma de habitar.</p>
+                    <span class="mock-button">Conoce el estudio ↗</span>
+                  </div>
+                  <div class="arch-art">
+                    <div class="arch-shadow"></div>
+                    <div class="arch-building">
+                      <div class="arch-door"></div>
+                      <div class="arch-line"></div>
+                    </div>
+                    <div class="arch-sun"></div>
+                    <div class="arch-ground"></div>
+                  </div>
+                </div>
+                <div class="arch-bottom">
+                  <span>Diseño funcional</span><span>Materiales honestos</span
+                  ><span>Visión contemporánea</span>
+                </div>
+              </div>
+            </div>
+            <div class="solution-description">
+              <span class="small-label">PRESENCIA DIGITAL</span>
+              <h3>Que tu primera impresión<br />hable bien de ti.</h3>
+              <p>
+                Un sitio corporativo que presenta tus servicios, comunica tu
+                identidad y ayuda a que las personas den el siguiente paso.
+              </p>
+              <ul class="check-list">
+                <li>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-check" /></svg
+                  >Diseño adaptable a cada pantalla
+                </li>
+                <li>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-check" /></svg
+                  >Estructura clara y navegación sencilla
+                </li>
+                <li>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-check" /></svg
+                  >Contacto visible y contenido útil
+                </li>
+              </ul>
+              <a class="text-link" href="#contacto" data-service="Página web"
+                >Hablemos de tu sitio
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-up-right" /></svg
+              ></a>
+            </div>
+          </div>
+          <div
+            class="solution-panel"
+            id="panel-system"
+            role="tabpanel"
+            aria-labelledby="tab-system"
+            tabindex="0"
+            hidden
+          >
+            <div
+              class="solution-preview system-example"
+              role="img"
+              aria-label="Concepto de panel de gestión con proyectos, actividades y estados ilustrativos"
+            >
+              <div class="example-browser">
+                <span class="window-dots"><i></i><i></i><i></i></span
+                ><span>Concepto · Gestión empresarial</span>
+              </div>
+              <div class="system-preview">
+                <div class="system-rail">
+                  <span class="system-logo">v<span>workspace</span></span
+                  ><span class="system-selected">Vista general</span
+                  ><span>Clientes</span><span>Proyectos</span
+                  ><span>Reportes</span>
+                </div>
+                <div class="system-content">
+                  <div class="system-top">
+                    <h4>Tu operación, más clara.</h4>
+                    <span class="mock-avatar">V</span>
+                  </div>
+                  <div class="system-stats">
+                    <div><span>Proyectos activos</span><strong>12</strong></div>
+                    <div><span>Entregas del mes</span><strong>08</strong></div>
+                    <div><span>Por revisar</span><strong>03</strong></div>
+                  </div>
+                  <div class="example-table">
+                    <div><strong>Proyecto</strong><strong>Estado</strong></div>
+                    <div>
+                      <span>Sitio corporativo</span
+                      ><span class="state-pill">En proceso</span>
+                    </div>
+                    <div>
+                      <span>Control de inventario</span
+                      ><span class="state-pill complete">Completado</span>
+                    </div>
+                    <div>
+                      <span>Portal de clientes</span
+                      ><span class="state-pill">En revisión</span>
+                    </div>
+                  </div>
+                  <div class="system-footer">
+                    Una vista compartida para tu equipo. <span>↗</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="solution-description">
+              <span class="small-label">OPERACIÓN Y CONTROL</span>
+              <h3>Menos tareas repetidas.<br />Más tiempo para avanzar.</h3>
+              <p>
+                Un sistema que reúne información y procesos en un solo lugar,
+                con permisos y módulos definidos según tu organización.
+              </p>
+              <ul class="check-list">
+                <li>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-check" /></svg
+                  >Gestión centralizada de información
+                </li>
+                <li>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-check" /></svg
+                  >Funciones por rol y área de trabajo
+                </li>
+                <li>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-check" /></svg
+                  >Reportes para apoyar decisiones
+                </li>
+              </ul>
+              <a
+                class="text-link"
+                href="#contacto"
+                data-service="Sistema a medida"
+                >Ordenar mi operación
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-up-right" /></svg
+              ></a>
+            </div>
+          </div>
+          <div
+            class="solution-panel"
+            id="panel-app"
+            role="tabpanel"
+            aria-labelledby="tab-app"
+            tabindex="0"
+            hidden
+          >
+            <div
+              class="solution-preview app-example"
+              role="img"
+              aria-label="Concepto de aplicación móvil de citas con datos de demostración"
+            >
+              <div class="example-browser">
+                <span class="window-dots"><i></i><i></i><i></i></span
+                ><span>Concepto · Aplicación de citas</span>
+              </div>
+              <div class="app-stage">
+                <div class="app-stage-label">
+                  <span>UNA EXPERIENCIA</span
+                  ><strong>Siempre<br />a la mano.</strong
+                  ><span class="app-doodle">↗</span>
+                </div>
+                <div class="phone">
+                  <div class="phone-notch"></div>
+                  <div class="phone-content">
+                    <div class="phone-top">
+                      <span>9:41</span><span>● ▰</span>
+                    </div>
+                    <div class="phone-heading">
+                      <small>Hola, Alex</small>
+                      <h4>Tu día,<br />más sencillo.</h4>
+                    </div>
+                    <div class="appointment-card">
+                      <span>PRÓXIMA CITA</span><strong>Consulta general</strong>
+                      <p>Martes, 20 de octubre<br />10:30 a. m.</p>
+                      <span class="phone-cta">Ver detalles ↗</span>
+                    </div>
+                    <h5>¿Qué necesitas?</h5>
+                    <div class="phone-options">
+                      <span>＋<small>Agendar</small></span
+                      ><span>▤<small>Mis citas</small></span>
+                    </div>
+                    <div class="phone-nav">
+                      <span>⌂</span><span>▦</span><span>○</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="solution-description">
+              <span class="small-label">EXPERIENCIAS MÓVILES</span>
+              <h3>Tu servicio, cerca<br />de quien lo necesita.</h3>
+              <p>
+                Una aplicación pensada para consultar información, reservar
+                servicios y mantenerse conectado desde el teléfono.
+              </p>
+              <ul class="check-list">
+                <li>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-check" /></svg
+                  >Flujos claros para el usuario
+                </li>
+                <li>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-check" /></svg
+                  >Conexión con tus servicios y datos
+                </li>
+                <li>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-check" /></svg
+                  >Diseño centrado en tareas reales
+                </li>
+              </ul>
+              <a class="text-link" href="#contacto" data-service="Aplicación"
+                >Construir mi aplicación
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-up-right" /></svg
+              ></a>
+            </div>
+          </div>
+          <p class="example-disclaimer">
+            Conceptos ilustrativos creados para este sitio. Las marcas,
+            pantallas y cifras de los ejemplos son ficticias.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="nosotros"
+        class="section-space about-section"
+        aria-labelledby="about-title"
+      >
+        <div class="container site-container">
+          <div class="row g-5 align-items-start">
+            <div class="col-lg-5 reveal">
+              <p class="eyebrow">
+                <span class="section-number">03 /</span> Somos VISLY
+              </p>
+              <h2 id="about-title">
+                Cercanos en el trato.<br />Claros en lo que<br />construimos.
+              </h2>
+              <div class="brand-art" aria-hidden="true">
+                <span class="brand-monogram">V</span
+                ><span class="brand-art-caption"
+                  >Una visión.<br />Muchas posibilidades.</span
+                ><span class="brand-art-plus">+</span>
+              </div>
+            </div>
+            <div class="col-lg-7 about-copy reveal">
+              <p class="about-intro">
+                Visly es una empresa dedicada al desarrollo de software y
+                soluciones tecnológicas.
+              </p>
+              <p>
+                Su propósito es crear herramientas digitales que ayuden a
+                organizaciones de distintos sectores a gestionar de forma
+                eficiente y segura sus procesos, información y operaciones
+                diarias. El equipo responsable está conformado por estudiantes
+                de la Universidad Tecnológica del Valle de Toluca y se encuentra
+                en la fase final del desarrollo de sus primeros sistemas.
+                Actualmente trabaja en un sistema de gestión clínica enfocado en
+                padecimientos oculares, entre otros proyectos, manteniendo
+                siempre la visión de ampliar su portafolio hacia diferentes
+                tipos de desarrollo de software.
+              </p>
+              <p>
+                Visly nace de la necesidad de ofrecer soluciones tecnológicas
+                completas, flexibles y adaptables, que faciliten el trabajo de
+                las organizaciones y contribuyan a una mejor organización de la
+                información y de los procesos, sin limitarse a un solo mercado o
+                sector.
+              </p>
+              <div class="purpose-grid">
+                <article>
+                  <span class="small-label">NUESTRA MISIÓN</span>
+                  <h3>Soluciones tecnológicas de calidad.</h3>
+                  <p>
+                    Desarrollar soluciones tecnológicas de calidad que permitan
+                    a las organizaciones gestionar de forma eficiente, segura y
+                    ordenada sus procesos, optimizando el manejo de la
+                    información y contribuyendo a la mejora de sus operaciones y
+                    servicios.
+                  </p>
+                </article>
+                <article>
+                  <span class="small-label">NUESTRA VISIÓN</span>
+                  <h3>Tecnología para diversos sectores.</h3>
+                  <p>
+                    Ser una empresa referente en el desarrollo de software y
+                    soluciones tecnológicas, reconocida por ofrecer herramientas
+                    confiables, accesibles e innovadoras que impulsen la
+                    transformación digital de organizaciones de diversos
+                    sectores.
+                  </p>
+                </article>
+              </div>
+              <div class="values">
+                <span class="small-label">LO QUE NOS GUÍA</span>
+                <div>
+                  <span>Compromiso</span><span>Calidad</span
+                  ><span>Honestidad</span><span>Innovación</span
+                  ><span>Responsabilidad</span>
+                </div>
+              </div>
+              <a class="text-link philosophy-home-link" href="filosofia.html"
+                >Conoce nuestra misión, visión y valores
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-up-right" /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="proceso"
+        class="section-space process-section"
+        aria-labelledby="process-title"
+      >
+        <div class="container site-container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">
+                <span class="section-number">04 /</span> Cómo trabajamos
+              </p>
+              <h2 id="process-title">
+                Del primer “tengo una idea”<br />al siguiente paso.
+              </h2>
+            </div>
+            <p>
+              Un proceso claro para que sepas qué estamos construyendo, por qué
+              y qué sigue en cada etapa.
+            </p>
+          </div>
+          <div class="process-grid">
+            <article class="process-step reveal">
+              <span class="step-number">01</span>
+              <h3>Escuchamos</h3>
+              <p>
+                Identificamos las necesidades del cliente y documentamos los
+                requerimientos funcionales.
+              </p>
+            </article>
+            <article class="process-step reveal">
+              <span class="step-number">02</span>
+              <h3>Definimos</h3>
+              <p>
+                Definimos las pantallas, los flujos de usuario y la estructura
+                técnica del sistema.
+              </p>
+            </article>
+            <article class="process-step reveal">
+              <span class="step-number">03</span>
+              <h3>Construimos</h3>
+              <p>
+                Construimos las funcionalidades de Frontend y Backend según los
+                requisitos y el diseño aprobado. Verificamos el funcionamiento,
+                la usabilidad y la seguridad; registramos los cambios, manuales
+                y evidencias de validación.
+              </p>
+            </article>
+            <article class="process-step reveal">
+              <span class="step-number">04</span>
+              <h3>Te acompañamos</h3>
+              <p>
+                Consolidamos la versión del sistema y la preparamos para su uso.
+                Atendemos observaciones y planificamos mejoras futuras.
+              </p>
+            </article>
+          </div>
+          <div class="process-note reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-star" /></svg>
+            <p>
+              Tu proyecto tiene su propio ritmo. El alcance y los tiempos se
+              definen después de conocerlo.
+            </p>
+            <a class="text-link" href="#contacto"
+              >Empezar la conversación
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow" /></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-space faq-section"
+        id="preguntas"
+        aria-labelledby="faq-title"
+      >
+        <div class="container site-container">
+          <div class="row g-5">
+            <div class="col-lg-5 reveal">
+              <p class="eyebrow">
+                <span class="section-number">05 /</span> Antes de empezar
+              </p>
+              <h2 id="faq-title">Las preguntas<br />que sí importan.</h2>
+              <p class="section-description">
+                Si tu duda es más específica, escríbenos.<br />Nos gusta hablar
+                claro.
+              </p>
+              <a class="text-link" href="mailto:soporte.ineo.mx@gmail.com"
+                >soporte.ineo.mx@gmail.com
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-up-right" /></svg
+              ></a>
+            </div>
+            <div class="col-lg-7 reveal">
+              <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq1"
+                      aria-expanded="true"
+                      aria-controls="faq1"
+                    >
+                      ¿Qué necesitan para cotizar mi proyecto?
+                    </button>
+                  </h3>
+                  <div
+                    id="faq1"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Cuéntanos qué hace tu empresa, qué problema quieres
+                      resolver y quién usará la solución. Si tienes referencias
+                      o funciones en mente, compártelas. No necesitas llegar con
+                      un documento técnico: podemos definirlo contigo.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2"
+                      aria-expanded="false"
+                      aria-controls="faq2"
+                    >
+                      ¿Cuánto cuesta y cuánto tarda?
+                    </button>
+                  </h3>
+                  <div
+                    id="faq2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Depende de las funciones, integraciones, contenidos y
+                      nivel de personalización. Después de revisar tu idea,
+                      preparamos una propuesta con precio, etapas y tiempos
+                      estimados. Los cambios de alcance se acuerdan antes de
+                      realizarse.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq3"
+                      aria-expanded="false"
+                      aria-controls="faq3"
+                    >
+                      ¿Mi página funcionará en celular?
+                    </button>
+                  </h3>
+                  <div
+                    id="faq3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Planeamos las páginas web con diseño adaptable para
+                      celular, tablet y computadora. En cada proyecto definimos
+                      los dispositivos y navegadores que se verificarán, así
+                      como las necesidades de accesibilidad y rendimiento.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq4"
+                      aria-expanded="false"
+                      aria-controls="faq4"
+                    >
+                      ¿Incluyen dominio, hosting y mantenimiento?
+                    </button>
+                  </h3>
+                  <div
+                    id="faq4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Pueden incorporarse a la propuesta cuando los necesites.
+                      Los costos de terceros, renovaciones y soporte se detallan
+                      por separado. Si ya cuentas con dominio o servidor,
+                      revisamos sus características para planear la
+                      implementación.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq5"
+                      aria-expanded="false"
+                      aria-controls="faq5"
+                    >
+                      ¿Pueden mejorar un sistema que ya tengo?
+                    </button>
+                  </h3>
+                  <div
+                    id="faq5"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Sí, podemos evaluar un proyecto existente. Primero
+                      revisamos su tecnología, documentación y accesos
+                      disponibles. Con ese diagnóstico definimos qué se puede
+                      corregir o ampliar y qué alternativas convienen.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq6"
+                      aria-expanded="false"
+                      aria-controls="faq6"
+                    >
+                      ¿Solo trabajan con empresas de Lerma?
+                    </button>
+                  </h3>
+                  <div
+                    id="faq6"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Nuestra base está en Santa María Atarasquillo, Lerma, y
+                      podemos colaborar con organizaciones de diversos sectores
+                      de forma remota. Las reuniones, revisiones y entregas se
+                      coordinan contigo. Las visitas presenciales se acuerdan
+                      según disponibilidad y ubicación.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contacto"
+        class="section-space contact-section"
+        aria-labelledby="contact-title"
+      >
+        <div class="container site-container">
+          <div class="row g-5">
+            <div class="col-lg-5 reveal">
+              <p class="eyebrow">
+                <span class="section-number">06 /</span> Hagamos algo útil
+              </p>
+              <h2 id="contact-title">
+                Tu siguiente proyecto<br />empieza aquí.
+              </h2>
+              <p class="contact-description">
+                Una idea, un proceso que quieres mejorar o un proyecto por
+                comenzar. Cuéntanos qué tienes en mente.
+              </p>
+              <div class="contact-details">
+                <div>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-mail" />
+                  </svg>
+                  <div>
+                    <span>ESCRÍBENOS</span
+                    ><a href="mailto:soporte.ineo.mx@gmail.com"
+                      >soporte.ineo.mx@gmail.com</a
+                    ><button
+                      type="button"
+                      class="copy-email"
+                      aria-label="Copiar correo de VISLY"
+                    >
+                      <svg class="icon" aria-hidden="true">
+                        <use href="#i-copy" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-pin" />
+                  </svg>
+                  <div>
+                    <span>DESDE LERMA</span>
+                    <p>
+                      Carretera del Departamento del D.F., km 7.5<br />Ejido de
+                      Santa María Atarasquillo<br />Lerma, Estado de México,
+                      México
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-care" />
+                  </svg>
+                  <div>
+                    <span>TELÉFONOS</span>
+                    <p>
+                      <a href="tel:+527225334422">722 533 4422</a><br /><a
+                        href="tel:+527224386532"
+                        >722 438 6532</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-window" />
+                  </svg>
+                  <div>
+                    <span>SITIO WEB</span
+                    ><a
+                      href="https://ineo-hospital-legal.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >ineo-hospital-legal.vercel.app</a
+                    >
+                  </div>
+                </div>
+                <div>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-clock" />
+                  </svg>
+                  <div>
+                    <span>HORARIO DE ATENCIÓN</span>
+                    <p>
+                      Lunes a viernes · 9:00 a 18:00<br />Hora del centro de
+                      México
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="contact-small">
+                Atención presencial con cita previa.<br />También podemos
+                conversar en línea.
+              </p>
+            </div>
+            <div class="col-lg-7 reveal">
+              <div class="contact-card">
+                <h3>Cuéntanos sobre tu proyecto.</h3>
+                <p class="form-intro" id="form-description">
+                  Prepara tu solicitud y continúa el envío en tu aplicación de
+                  correo.
+                </p>
+                <form
+                  id="contactForm"
+                  aria-describedby="form-description"
+                  action="mailto:ineo.hospital.dev@gmail.com"
+                  method="post"
+                  enctype="text/plain"
+                >
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label" for="contactName"
+                        >Tu nombre
+                        <span aria-label="obligatorio">*</span></label
+                      ><input
+                        class="form-control"
+                        id="contactName"
+                        name="nombre"
+                        autocomplete="name"
+                        placeholder="¿Cómo te llamas?"
+                        minlength="2"
+                        maxlength="80"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="contactCompany"
+                        >Empresa <span class="optional">Opcional</span></label
+                      ><input
+                        class="form-control"
+                        id="contactCompany"
+                        name="empresa"
+                        autocomplete="organization"
+                        placeholder="Nombre de tu empresa"
+                        maxlength="120"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="contactEmail"
+                        >Tu correo
+                        <span aria-label="obligatorio">*</span></label
+                      ><input
+                        class="form-control"
+                        id="contactEmail"
+                        type="email"
+                        name="email"
+                        autocomplete="email"
+                        placeholder="nombre@empresa.com"
+                        maxlength="150"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="contactService"
+                        >¿Qué necesitas?
+                        <span aria-label="obligatorio">*</span></label
+                      ><select
+                        class="form-select"
+                        id="contactService"
+                        name="servicio"
+                        required
+                      >
+                        <option value="" selected disabled>
+                          Selecciona una opción
+                        </option>
+                        <option>Página web</option>
+                        <option>Sistema a medida</option>
+                        <option>Aplicación</option>
+                        <option>Mejora o mantenimiento</option>
+                        <option>Quiero orientación</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label" for="contactMessage"
+                        >Tu idea <span aria-label="obligatorio">*</span></label
+                      ><textarea
+                        class="form-control"
+                        id="contactMessage"
+                        name="mensaje"
+                        rows="4"
+                        placeholder="¿Qué te gustaría crear o mejorar?"
+                        minlength="20"
+                        maxlength="1500"
+                        aria-describedby="message-help"
+                        required
+                      ></textarea>
+                      <div class="field-help" id="message-help">
+                        Entre 20 y 1,500 caracteres. Comparte solo información
+                        general de tu proyecto.
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check consent">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="contactConsent"
+                          name="consentimiento"
+                          required
+                        /><label class="form-check-label" for="contactConsent"
+                          >He leído el
+                          <a href="privacidad.html">aviso de privacidad</a> y
+                          autorizo el uso de mis datos para atender esta
+                          solicitud.</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button
+                        class="button button-dark form-submit"
+                        type="submit"
+                      >
+                        Preparar solicitud
+                        <svg class="icon" aria-hidden="true">
+                          <use href="#i-up-right" />
+                        </svg>
+                      </button>
+                      <p class="form-footnote">
+                        * Campos obligatorios. Sin compromisos de contratación.
+                      </p>
+                    </div>
+                  </div>
+                </form>
+                <noscript
+                  ><p class="notice">
+                    Para preparar la solicitud, activa JavaScript o escribe
+                    directamente a
+                    <a href="mailto:soporte.ineo.mx@gmail.com"
+                      >soporte.ineo.mx@gmail.com</a
+                    >.
+                  </p></noscript
+                >
+                <div class="mail-result" id="mailResult" hidden tabindex="-1">
+                  <span class="result-check"
+                    ><svg class="icon" aria-hidden="true">
+                      <use href="#i-check" /></svg
+                  ></span>
+                  <h4>Tu solicitud está preparada.</h4>
+                  <p>
+                    Aún no se ha enviado. Abre tu correo, revisa el mensaje y
+                    envíalo cuando esté listo.
+                  </p>
+                  <div class="result-actions">
+                    <a
+                      class="button button-dark"
+                      id="mailLink"
+                      href="mailto:soporte.ineo.mx@gmail.com"
+                      >Abrir mi correo
+                      <svg class="icon" aria-hidden="true">
+                        <use href="#i-up-right" /></svg></a
+                    ><button class="text-link" type="button" id="copyMessage">
+                      Copiar mensaje
+                      <svg class="icon" aria-hidden="true">
+                        <use href="#i-copy" />
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="field-help">
+                    Si no tienes una aplicación de correo configurada, copia el
+                    mensaje y envíalo desde Gmail u otro servicio a
+                    soporte.ineo.mx@gmail.com.
+                  </p>
+                  <details class="message-details">
+                    <summary>Ver el mensaje preparado</summary>
+                    <pre id="messagePreview"></pre>
+                  </details>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a href="index.html" aria-label="VISLY, inicio"
+              ><img
+                src="assets/img/logo-visly.svg"
+                alt="VISLY"
+                width="130"
+                height="36"
+            /></a>
+            <p>
+              Desarrollo con intención.<br />Desde Lerma, para tu próxima idea.
+            </p>
+          </div>
+          <div class="footer-column">
+            <span>EXPLORA</span><a href="#servicios">Servicios</a
+            ><a href="#nosotros">Nosotros</a
+            ><a href="#proceso">Cómo trabajamos</a
+            ><a href="#preguntas">Preguntas frecuentes</a>
+            <a href="filosofia.html">Misión, visión y valores</a>
+          </div>
+          <div class="footer-column">
+            <span>CONVERSEMOS</span
+            ><a href="mailto:soporte.ineo.mx@gmail.com"
+              >soporte.ineo.mx@gmail.com</a
+            ><a href="#contacto">Cuéntanos tu proyecto ↗</a>
+            <p>Santa María Atarasquillo, Lerma<br />Estado de México</p>
+          </div>
+          <div class="footer-column">
+            <span>INFORMACIÓN LEGAL</span
+            ><a href="terminos.html">Términos y condiciones</a
+            ><a href="privacidad.html">Aviso de privacidad</a
+            ><a href="cookies.html">Cookies y navegación</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © <span data-year>2026</span> VISLY. Todos los derechos reservados.
+          </p>
+          <a href="#inicio"
+            >Volver arriba
+            <svg class="icon" aria-hidden="true"><use href="#i-up-right" /></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <div
+      id="siteToast"
+      class="site-toast"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    ></div>
+  </body>
+</html>
