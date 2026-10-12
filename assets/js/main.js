@@ -3,7 +3,7 @@
   "use strict";
 
   // Correo de contacto general indicado en el documento de la organización.
-  const CONTACT_EMAIL = "soporte.ineo.mx@gmail.com";
+  const CONTACT_EMAIL = "soporte.visly@gmail.com";
   const reducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)",
   ).matches;

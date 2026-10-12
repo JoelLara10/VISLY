@@ -2,7 +2,7 @@
 
 ## Correo del formulario y correo visible
 
-El formulario prepara sus solicitudes para **ineo.hospital.dev@gmail.com**. El correo general visible de la organización es **soporte.ineo.mx@gmail.com**, según el documento proporcionado.
+El formulario prepara sus solicitudes para **ineo.hospital.dev@gmail.com**. El correo general visible de la organización es **soporte.visly@gmail.com**, según el documento proporcionado.
 
 Para cambiar solo el destinatario del formulario:
 

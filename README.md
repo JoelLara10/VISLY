@@ -56,7 +56,7 @@ Después entra a `http://localhost:8000`. En Windows también puedes usar la ext
 
 El botón **Preparar solicitud** valida los campos y crea un mensaje. Después, **Abrir mi correo** abre un enlace `mailto:`. El visitante revisa y envía el correo desde su propia aplicación. Si no tiene una aplicación configurada, puede copiar el mensaje y pegarlo en Gmail u otro servicio.
 
-El destinatario del formulario está configurado como **ineo.hospital.dev@gmail.com**. El correo general visible y el botón que lo copia usan **soporte.ineo.mx@gmail.com**, conforme al documento de la organización.
+El destinatario del formulario está configurado como **ineo.hospital.dev@gmail.com**. El correo general visible y el botón que lo copia usan **soporte.visly@gmail.com**, conforme al documento de la organización.
 
 La página no envía correos automáticamente ni muestra una confirmación de recepción. No tiene servidor de formularios ni guarda los datos en una base de datos. No usa cookies, analítica, localStorage o sessionStorage. Las entradas del visitante se muestran con `textContent`, no como HTML.
 
